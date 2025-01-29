@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uploadActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border1"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Make a Request"
+                android:textColor="@color/lavender"
+                android:textSize="30sp" />
+
+
+
+            <EditText
+                android:id="@+id/employee_id"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Employee id"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Cycle Location"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
+
+            <EditText
+                android:id="@+id/cycle_color"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Cycle Colour "
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
+
+            <Button
+                android:id="@+id/request_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Request"
+                android:textSize="27sp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

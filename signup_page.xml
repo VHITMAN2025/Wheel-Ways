@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpaper"
+    tools:context=".SignupActivity">
+
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="Sign up"
+        android:textColor="@color/Yellow"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/signup_name"
+        android:layout_width="297dp"
+        android:layout_height="58dp"
+        android:background="@drawable/signupborder"
+        android:hint="  Username"
+        android:inputType="textPersonName"
+        android:paddingStart="13dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <EditText
+        android:id="@+id/signup_id"
+        android:layout_width="297dp"
+        android:layout_height="58dp"
+        android:background="@drawable/signupborder"
+        android:hint="  User ID"
+        android:inputType="number"
+        android:paddingStart="13dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="297dp"
+        android:layout_height="58dp"
+        android:background="@drawable/signupborder"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:paddingStart="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <EditText
+        android:id="@+id/signup_contact"
+        android:layout_width="297dp"
+        android:layout_height="58dp"
+        android:background="@drawable/signupborder"
+        android:hint="  Contact"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:paddingStart="13dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:layout_width="297dp"
+        android:layout_height="58dp"
+        android:background="@drawable/signupborder"
+        android:hint="  Email"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:paddingStart="13dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+
+    <RadioGroup
+        android:id="@+id/radioSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/signup_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_email">
+
+
+        <RadioButton
+            android:id="@+id/employee_radio"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text=" Employee"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.085"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761" />
+
+        <RadioButton
+            android:id="@+id/admin_radio"
+            android:layout_width="115dp"
+            android:layout_height="48dp"
+            android:text="Admin"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761" />
+
+        <RadioButton
+            android:id="@+id/security_radio"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:text="Security"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.881"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="160dp"
+        android:layout_height="61dp"
+        android:background="@drawable/signupborder"
+        android:text="Sign up"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879" />
+
+    <TextView
+        android:id="@+id/LoginRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Registered? Login"
+        android:textColor="@color/Yellow"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

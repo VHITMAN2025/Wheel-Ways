@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/button9"
+        android:layout_width="357dp"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:text="Cycle Return Status"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/returned_emp_id"
+        android:inputType="number"
+        android:layout_width="170dp"
+        android:layout_height="77dp"
+        android:background="@drawable/textborder"
+        android:paddingTop="18dp"
+        android:paddingLeft="45dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/returned_cycle_id"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <TextView
+        android:id="@+id/returned_cycle_id"
+        android:layout_width="170dp"
+        android:layout_height="77dp"
+        android:background="@drawable/textborder"
+        android:inputType="number"
+        android:paddingTop="18dp"
+        android:paddingLeft="45dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <TextView
+        android:id="@+id/emp_textview"
+        android:layout_width="156dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="Employee Id"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308" />
+
+    <TextView
+        android:id="@+id/cycle_textView"
+        android:layout_width="156dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="Cycle Id"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308" />
+
+    <CheckBox
+        android:id="@+id/damagedCheckBox"
+        android:layout_width="357dp"
+        android:layout_height="66dp"
+        android:text="Returned in damaged"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <CheckBox
+        android:id="@+id/undamagedCheckBox"
+        android:layout_width="357dp"
+        android:layout_height="66dp"
+        android:text="Returned Successfully"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <TextView
+        android:id="@+id/feedback_textView"
+        android:layout_width="338dp"
+        android:layout_height="54dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/green"
+        android:gravity="center"
+        android:text="Feedback On Damage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="420dp"
+        android:layout_height="70dp"
+        android:hint="description"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:paddingStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.763" />
+
+    <Button
+        android:id="@+id/sub_button"
+        android:layout_width="199dp"
+        android:layout_height="72dp"
+        android:background="@drawable/border"
+        android:text="Submit"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

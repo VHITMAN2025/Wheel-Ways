@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Availability_Activity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="355dp"
+        android:layout_height="58dp"
+        android:background="@drawable/border1"
+        android:backgroundTint="@color/lavender"
+        android:gravity="center"
+        android:text="Availability Of Cycles"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="193dp"
+        android:layout_height="47dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="  Issued Cycles  "
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="193dp"
+        android:layout_height="47dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Not Issued "
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <TextView
+        android:id="@+id/issued_count"
+        android:layout_width="70dp"
+        android:layout_height="58dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:hint="0"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <TextView
+        android:id="@+id/not_issued_count"
+        android:layout_width="70dp"
+        android:layout_height="58dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:hint="0"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.335" />
+
+    <Button
+        android:id="@+id/notifybtn"
+        android:layout_width="313dp"
+        android:layout_height="62dp"
+        android:background="@drawable/border"
+        android:text="Notify Me"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="372dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="Available Locations of Bi-cycle"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59" />
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="378dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="Hyderabad"
+        android:textColor="@color/lavender"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="378dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="Chennai"
+        android:textColor="@color/lavender"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="378dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="Madurai"
+        android:textColor="@color/lavender"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.764" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="378dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="Lucknow"
+        android:textColor="@color/lavender"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.815" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="378dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="Vijaywada"
+        android:textColor="@color/lavender"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="378dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="Bangalore"
+        android:textColor="@color/lavender"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="378dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="Noida"
+        android:textColor="@color/lavender"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

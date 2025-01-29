@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".History_Activity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emp_id:"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/H_emp_id"
+                android:layout_height="wrap_content"
+                android:paddingStart="26dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cycle_id:"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/H_cycle_id"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cycle_issued:"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/H_issued_date"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"/>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cycle_returned:"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/H_returned_date"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
